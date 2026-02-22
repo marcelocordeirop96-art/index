@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dor Zero Hoje</title>
+
+<style>
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CORES */
+:root{
+  --azul:#0A66C2;
+  --azulHover:#084a8a;
+  --branco:#ffffff;
+  --cinza:#f4f6f8;
+  --verde:#28a745;
+}
+
+/* FUNDO */
+body{
+  background: linear-gradient(135deg,#0A66C2,#111);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+}
+
+/* CONTAINER */
+.container{
+  background: var(--branco);
+  max-width:600px;
+  width:100%;
+  padding:25px 20px;
+  border-radius:15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  animation:fadeIn 0.8s ease;
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* TITULO */
+h1{
+  text-align:center;
+  color:var(--azul);
+  margin-bottom:8px;
+}
+
+/* SUBTITULO */
+.sub{
+  text-align:center;
+  margin-bottom:15px;
+  font-size:17px;
+  color:#333;
+}
+
+/* BARRA DE PROGRESSO */
+.progress-container{
+  background:#ddd;
+  border-radius:10px;
+  height:12px;
+  margin-bottom:5px;
+  overflow:hidden;
+}
+.progress-bar{
+  height:100%;
+  width:97%;
+  background:var(--azul);
+  border-radius:10px;
+  transition:0.5s;
+}
+.progress-text{
+  text-align:right;
+  font-size:14px;
+  margin-bottom:20px;
+  color:#555;
+  font-weight:bold;
+}
+
+/* BALÃO DE INFORMAÇÃO */
+.box{
+  background: var(--cinza);
+  padding:25px 20px;
+  border-radius:12px;
+  margin-bottom:25px;
+  border-left:6px solid var(--azul);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  position: relative;
+  animation:slideIn 0.8s ease;
+}
+@keyframes slideIn{
+  from{opacity:0; transform:translateX(-20px);}
+  to{opacity:1; transform:translateX(0);}
+}
+.box::before{
+  content:"💡";
+  position:absolute;
+  top:-10px;
+  left:-10px;
+  font-size:24px;
+}
+.box p{
+  margin-bottom:12px;
+  font-size:15px;
+  line-height:1.5;
+}
+.box p::before{
+  content:"✔ ";
+  color: var(--verde);
+  font-weight:bold;
+}
+
+/* FORMULÁRIO */
+form{
+  display:flex;
+  flex-direction:column;
+}
+label{
+  margin-top:12px;
+  font-weight:bold;
+  font-size:14px;
+}
+input, select, textarea{
+  margin-top:5px;
+  padding:12px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:16px;
+  transition:0.3s;
+}
+input:focus, select:focus, textarea:focus{
+  border-color: var(--azul);
+  outline:none;
+  box-shadow:0 0 5px rgba(10,102,194,0.4);
+}
+textarea{
+  height:100px;
+  resize:none;
+}
+
+/* BOTÃO */
+button{
+  margin-top:20px;
+  padding:16px;
+  background: var(--azul);
+  color:white;
+  border:none;
+  border-radius:8px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+button:hover{
+  background: var(--azulHover);
+  transform:scale(1.03);
+}
+
+/* TEXTO FINAL */
+.final{
+  text-align:center;
+  margin-top:15px;
+  font-size:13px;
+  color:#666;
+}
+
+/* RESPONSIVO */
+@media(max-width:480px){
+  .container{
+    padding:20px 15px;
+  }
+  .box p{
+    font-size:14px;
+  }
+  label{
+    font-size:13px;
+  }
+  button{
+    font-size:16px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Dor Zero Hoje</h1>
+
+<p class="sub">
+Preencha o formulário para desbloquear o conteúdo exclusivo no Instagram
+</p>
+
+<!-- BARRA DE PROGRESSO -->
+<div class="progress-container">
+  <div class="progress-bar"></div>
+</div>
+<div class="progress-text">97% completo</div>
+
+<!-- BALÃO DE INFORMAÇÃO -->
+<div class="box">
+  <p>Como surgem os desalinhamentos posturais</p>
+  <p>Por que a dor não começa onde você sente</p>
+  <p>Ter um corpo alinhado melhora estética e função</p>
+  <p>Quais são os primeiros passos para corrigir</p>
+</div>
+
+<!-- FORMULÁRIO -->
+<form action="https://formsubmit.co/empreendedorcordeirop@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Novo Lead - Dor Zero Hoje">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://www.instagram.com/reorganizacao_corporal?utm_source=qr&igsh=MWY2cGtsb3J5cGtrcw==">
+
+  <label>Onde sente mais dor?</label>
+  <select name="Regiao da dor" required>
+    <option value="">Selecione</option>
+    <option>Cervical (pescoço)</option>
+    <option>Ombros</option>
+    <option>Coluna torácica</option>
+    <option>Lombar</option>
+    <option>Quadril</option>
+    <option>Joelhos</option>
+    <option>Tornozelos</option>
+    <option>Pés</option>
+    <option>Punhos / Mãos</option>
+    <option>Várias regiões</option>
+  </select>
+
+  <label>Há quanto tempo sente?</label>
+  <select name="Tempo da dor" required>
+    <option value="">Selecione</option>
+    <option>Recente (dias)</option>
+    <option>Alguns meses</option>
+    <option>Mais de 6 meses</option>
+    <option>Mais de 1 ano</option>
+  </select>
+
+  <label>Intensidade da dor</label>
+  <select name="Intensidade" required>
+    <option value="">Selecione</option>
+    <option>Leve</option>
+    <option>Moderada</option>
+    <option>Forte</option>
+    <option>Muito forte</option>
+  </select>
+
+  <label>Telefone</label>
+  <input type="tel" name="Telefone" required>
+
+  <label>Email</label>
+  <input type="email" name="Email" required>
+
+  <label>Gênero</label>
+  <select name="Genero" required>
+    <option value="">Selecione</option>
+    <option>Masculino</option>
+    <option>Feminino</option>
+    <option>Outro</option>
+  </select>
+
+  <label>Idade</label>
+  <input type="number" name="Idade" required>
+
+  <label>Resuma seu caso</label>
+  <textarea name="Dor" required></textarea>
+
+  <button type="submit">ACESSE O CONTEÚDO</button>
+</form>
+
+<div class="final">
+Após clicar, você será redirecionado automaticamente.
+</div>
+
+</div>
+
+</body>
+</html>
