@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cinesioterapia Online</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#000;
+color:white;
+}
+
+header{
+background:#0a0a0a;
+padding:20px;
+font-size:24px;
+font-weight:bold;
+color:#2da8ff;
+}
+
+.section{
+padding:20px;
+}
+
+.section h2{
+margin-bottom:10px;
+}
+
+.row{
+display:flex;
+overflow-x:auto;
+gap:15px;
+}
+
+.card{
+min-width:200px;
+height:120px;
+background:#1c1c1c;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+font-weight:bold;
+color:#e0e0e0;
+cursor:pointer;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+background:#2da8ff;
+color:black;
+}
+
+.row::-webkit-scrollbar{
+height:6px;
+}
+
+.row::-webkit-scrollbar-thumb{
+background:#2da8ff;
+border-radius:10px;
+}
+
+#player{
+padding:20px;
+text-align:center;
+}
+
+iframe{
+width:90%;
+max-width:900px;
+height:450px;
+border:none;
+border-radius:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+CINESIOTERAPIA • CONSULTORIA ONLINE
+</header>
+
+<div id="player"></div>
+
+<!-- CINTURA ESCAPULAR -->
+<div class="section">
+<h2>Cintura Escapular</h2>
+
+<div class="row">
+<div class="card"
+onclick="playVideo('9blrNlHImUI')"
+style="background-image:url('imagens/ombros.jpeg'); background-size:cover; background-position:center;">
+
+Postura dos Ombros
+
+</div>
+<div class="card" onclick="playVideo('BJ7JpB1RJSs')">Estabilidade Escapular</div>
+<div class="card" onclick="playVideo('VIDEO_ID_3')">Liberação Cervical</div>
+<div class="card" onclick="playVideo('VIDEO_ID_4')">Fortalecimento Superior</div>
+</div>
+</div>
+
+<!-- CORE E GLÚTEO -->
+<div class="section">
+<h2>Core e Glúteo</h2>
+
+<div class="row">
+<div class="card" onclick="playVideo('VIDEO_ID_5')">Ativação do Core</div>
+<div class="card" onclick="playVideo('VIDEO_ID_6')">Glúteo Médio</div>
+<div class="card" onclick="playVideo('VIDEO_ID_7')">Estabilidade Lombar</div>
+<div class="card" onclick="playVideo('VIDEO_ID_8')">Controle de Pelve</div>
+</div>
+</div>
+
+<!-- CINTURA PÉLVICA -->
+<div class="section">
+<h2>Cintura Pélvica</h2>
+
+<div class="row">
+<div class="card" onclick="playVideo('VIDEO_ID_9')">Alinhamento Pélvico</div>
+<div class="card" onclick="playVideo('VIDEO_ID_10')">Mobilidade de Quadril</div>
+<div class="card" onclick="playVideo('VIDEO_ID_11')">Correção Postural</div>
+<div class="card" onclick="playVideo('VIDEO_ID_12')">Base de Movimento</div>
+</div>
+</div>
+
+<!-- MOBILIDADES -->
+<div class="section">
+<h2>Mobilidades Específicas</h2>
+
+<div class="row">
+<div class="card" onclick="playVideo('VIDEO_ID_13')">Tornozelo</div>
+<div class="card" onclick="playVideo('VIDEO_ID_14')">Coluna Torácica</div>
+<div class="card" onclick="playVideo('VIDEO_ID_15')">Quadril</div>
+<div class="card" onclick="playVideo('VIDEO_ID_16')">Ombro</div>
+</div>
+</div>
+
+<script>
+
+function playVideo(id){
+
+document.getElementById("player").innerHTML =
+'<iframe src="https://www.youtube.com/embed/'+id+'" allowfullscreen></iframe>';
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
